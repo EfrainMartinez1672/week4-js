@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Módulo 3 - Administrador de Tareas CRUD</title>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+
+    <main id="app-container">
+        <h1>Administrador de Tareas (Módulo 3)</h1>
+
+        <section id="form-section">
+            <form id="task-form">
+                <div class="form-group">
+                    <label for="task-input">Nombre de la tarea:</label>
+                    <input type="text" id="task-input" placeholder="Ej. Estudiar para el quiz de Riwi..." autocomplete="off">
+                </div>
+                <button type="submit">Agregar Tarea</button>
+            </form>
+            <div id="message-container"></div>
+        </section>
+
+        <hr>
+
+        <section id="list-section">
+            <h2>Mis Tareas Sincronizadas</h2>
+            <ul id="task-list"></ul>
+        </section>
+    </main>
+
+    <script src="app.js" type="module"></script>
+</body>
+</html>
